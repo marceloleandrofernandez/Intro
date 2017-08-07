@@ -2,9 +2,10 @@
     Private _memoria As Queue(Of String)
     Private _fechaNacimiento As Date
     Private _nombre As String
+    Private _frase As String
     Sub New()
         _memoria = New Queue(Of String)
-        _fechaNacimiento = #9/21/1985#
+        _fechaNacimiento = #8/21/1990#
         _nombre = "Pepe"
     End Sub
     Public Property FechaNacimiento As Date
@@ -31,16 +32,16 @@
     Private Function CalcularEdad() As Short
         Return DateDiff(DateInterval.Year, FechaNacimiento, DateTime.Now)
     End Function
-    Public Sub Escuchar(frase As String)
+    Public Overridable Sub Escuchar(frase As String)
         _memoria.Enqueue(frase)
     End Sub
     Public Overrides Function ToString() As String
         Return Nombre
     End Function
     Public Function Hablar() As String
-        If _memoria.Count > 1 Then
-            Return _memoria.Dequeue
+        If _memoria.Count >= 1 Then
+            _frase += _memoria.Dequeue & " "
         End If
-        Return ""
+        Return _frase
     End Function
 End Class

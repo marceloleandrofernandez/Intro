@@ -3,7 +3,6 @@ Module LoroTest
 
     Sub Main()
         Dim lodo As New Loro
-        Dim cadena As String = ""
         lodo.Nombre = "Ramon"
         lodo.FechaNacimiento = #12/12/1990#
         Console.WriteLine("Nombre = {0}", lodo.Nombre)
@@ -14,14 +13,13 @@ Module LoroTest
         lodo.Escuchar("pa el loro")
         lodo.Escuchar("Juan")
 
-        cadena += lodo.Hablar()
-        Console.WriteLine(cadena)
-        cadena += lodo.Hablar()
-        Console.WriteLine(cadena)
-        cadena += lodo.Hablar()
-        Console.WriteLine(cadena)
-        cadena += lodo.Hablar()
-        Console.WriteLine(cadena)
+
+        Console.WriteLine(lodo.Hablar())
+        Console.WriteLine(lodo.Hablar())
+        Console.WriteLine(lodo.Hablar())
+        Console.WriteLine(lodo.Hablar())
+        Console.WriteLine(lodo.Hablar())
+
 
         Console.ReadKey()
     End Sub
