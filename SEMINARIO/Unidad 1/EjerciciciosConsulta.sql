@@ -24,7 +24,8 @@ SELECT getdate() as 'Fecha y hora actual'
 
 -- Ejercicio 1.5 --
 --Preguntar lo de que multipla las lineas.--
-SELECT titulo, 'Regalías x cada 1000 unidades'=regalias * 1000 
+-- select titulo, 'regalias cada 1000 unidades' = precio * 1000 / regalias from titulos---
+SELECT titulo, 'RegalÃ­as x cada 1000 unidades'=regalias * 1000 
 FROM titulos
 
 -- Ejercicio 1.6 --
