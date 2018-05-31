@@ -17,7 +17,7 @@
 			echo"	<div class='container'>
 						<div class='panel panel-info>
 							      	<div class='panel-heading'>
-							      		<h4>Examen Revisar ACA</h4>
+							      		<h4>Examen La Puta que te pario</h4>
 							      	</div>
 				      	<div class='panel-body'>
 								<div class='row'>
