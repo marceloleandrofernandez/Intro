@@ -24,9 +24,9 @@ if ($_REQUEST['tarea']==="Agregar") {
 
 				echo $result=mysqli_query($con,$sql);
 				return $result;		
+
 	}elseif ($_REQUEST['tarea']==="CargarModal") {
 			$id=$_REQUEST['id'];
-			// 
 			$sql="SELECT idpersona,
 							nombre,
 							apellido,
@@ -54,10 +54,9 @@ if ($_REQUEST['tarea']==="Agregar") {
 				'codpostal' => $ver[8],
 				'tipo' 		=> $ver[9]
 				);
-
 			echo  json_encode($datos);
 
-		  }elseif ($_REQUEST['tarea']==="Actualizar") {
+	}elseif ($_REQUEST['tarea']==="Actualizar") {
 					  	$id=$_POST['editarpersonaid'];
 					  	$nombre=$_POST['nombreE'];
 					  	$apellido=$_POST['apellidoE'];
@@ -72,7 +71,6 @@ if ($_REQUEST['tarea']==="Agregar") {
 					  	$provincia=$_POST['provinciaE'];
 					  	$ciudad=$_POST['ciudadE'];
 					  	//echo $id, $nombre,$f_nac;
-
 			/*$sql="UPDATE `personas` SET 
 											`nombre`='$nombre',
 											`apellido`='$apellido',
@@ -84,7 +82,6 @@ if ($_REQUEST['tarea']==="Agregar") {
 											`codpostal`=$cod_postal,
 											`tipo`=$id_tipo 
 											WHERE idpersona='$id'";*/
-
 		  	$sql="UPDATE personas SET 	nombre	= '$nombre',
 		  								apellido = '$apellido',
 		  								dni	= '$dni',
@@ -95,14 +92,59 @@ if ($_REQUEST['tarea']==="Agregar") {
 		  							 	codpostal = $cod_postal,
 		  							 	tipo = $id_tipo 
 		  							 	WHERE idpersona = '$id'";
-
-		  	//echo $sql;
-		  	//echo "<br>";
 		  	//$sql=mysqli_real_escape_string($con,$sql);
-		  	
-		  	
 		  	echo mysqli_query($con,$sql)or die(mysqli_error($con));
-}								
+
+
+	}elseif ($_REQUEST['tarea']==="Eliminar") {
+			$id=$_REQUEST['id'];
+			$sql="DELETE from personas where idpersona='$id'";
+			echo mysqli_query($con,$sql)or die(mysqli_error($con));
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // $id = 10;	
 // 						$sql="SELECT idpersona,
 // 									 nombre,

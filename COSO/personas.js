@@ -125,7 +125,7 @@ function actualizarDatos(id,nombre,apellido,dni,f_nac,telefono,email,id_tipo,dom
            url:"personas_base.php?tarea=Actualizar",
           success:function(r){
                 if(r==1){
-                alert("agregado con exito :)"+r);
+                alert("Editado con exito :)"+r);
                 $('#tabla_personas').load('tabla.php');
                 
                 }else{
@@ -134,3 +134,26 @@ function actualizarDatos(id,nombre,apellido,dni,f_nac,telefono,email,id_tipo,dom
             }
           });
 }
+function eliminarPersona(id){
+    if (confirm("Desea Eliminar El Regitro?")) {
+      $.ajax({
+              type:"post",
+              url:'personas_base.php?tarea=Eliminar',
+              data:"id=" + id,
+              success:function(r){
+              if(r==1){
+                  alert("Eliminado Con Exito :)"); 
+                  $('#tabla_personas').load('tabla.php');
+                }else{
+                  alert("Fallo el servidor :("+r);
+                }               
+              }
+      });
+
+    }else{
+      alert("Registro NO Eliminado");
+    }
+    
+    
+       
+ }

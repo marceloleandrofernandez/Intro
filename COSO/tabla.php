@@ -41,8 +41,9 @@
                           				<td>".$row['codpostal']."</td>
                           				<td>".$row['descripcion']."</td>
                            				<td>
-                           					<a href='#'  class='btn btn btn-dark fa fa-edit' title='Editar Persona' data-toggle='modal' data-target='#modaleditarpersonas' id='boton' onclick='CargarDatosmod(".$id.")'></a>
-                          					<a href='#'  class='btn btn btn-dark fa fa-trash' title='Borrar Persona'></a>
+                           					<a href=''  class='btn btn btn-dark fa fa-edit' title='Editar Persona' data-toggle='modal' data-target='#modaleditarpersonas' id='boton' onclick='CargarDatosmod(".$id.")'></a>
+                          					<a href=''  class='btn btn btn-dark fa fa-trash' title='Borrar Persona' 
+                          						id='btnBorrar' onclick='eliminarPersona(".$id.")'></a>
                           					 
                           				</td>
                           				</tr>";
