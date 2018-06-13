@@ -46,89 +46,100 @@
 	<title></title>
 </head>
 <body>
-<div class="span11">
-	<a name="demo"></a>
-		<h2><?php echo $noombre_examen['nombre']; ?></h2>
-		<p>Basic Demo Example.</p>
-	<div id="rootwizard">
-	<div class="navbar">
-	  <div class="navbar-inner">
-	    <div class="container">
-							<ul>
-							
-							 <?php for ($i=1; $i < $cant_preg + 1; $i++) { 
-							 	#lista de preguntas
-							 	echo "<li><a href='#tab".$i."' data-toggle='tab'>".$i."</a></li>"; 
-							 } ?>
-							</ul>
-	 	</div>
-	  </div>
-	</div>
-	<div id="bar" class="progress active">
-	  			<div class="progress-bar progress-bar-info"></div> <!-- REVISAR ESTO!!! -->
-	</div>
-	<div class="container">
-	<div class="tab-content">
-	
-		<?php while ($preg = traer_registro($preguntas)) { 
 
-			$cant++;
-		?>	
-		
-	    <div class="tab-pane" id="tab<?php echo $preg['id']; ?>">
-	    	<form id="preg"  method="POST">         <!--prueba_exam.php-->
-				
-						<!-- Pregunta -->
-						<div class="col-md-3 bg-success "> 
-							<h4>Pregunta Nº <?php echo $preg['id']; ?></h4>
-							<p>Sin responder aún</p>
-							<p>Puntaje <?php echo $preg['valor'];?></p>
-							<p>Porcentaje error <?php echo $preg['porcentaje_error'];?>%</p>
-						</div>
-						<!-- Respuestas  de Preguntas  -->
-						<div class="col-md-offset-1 col-md-8 bg-info">
-						<div class="form-group">	
-						<div class="col-md-12"><u><p><?php echo $preg['enunciado'];?></p></u></div>
-							<?php $id=0;
-							$idpregunta = $preg['id'];
-							$respuestas = consulta("SELECT * FROM respuesta WHERE pregunta_id = $idpregunta");
-							while ($resp = traer_registro($respuestas)){
-									$afirmacion = $resp['descripcion'];
-									?>
-							<label class="col-md-offset-1 col-md-8 control-label"><?php echo $afirmacion;?></label>
-						    <div class="col-md-3">
-						    <label class="radio-inline"><input type="radio" name="<?php echo $resp['id'];?>" value="1">V</label>
-						    <label class="radio-inline"><input type="radio" name="<?php echo $resp['id'];?>" value="0">F</label>
-						    </div>
-						
-							<?php } //Segundo WHILE ?>
-						</div> <!-- form-group -->
-						</div> <!-- bg-info -->
-						     
-						    <button type="submit" id="coso" class="btn btn-success btn-lg center-block"  >Verificar ?</button>
-        										
-						</form>	
+<div class="container-fluid">
+    
+   			<div class="panel panel-info">
+				      	<div class="panel-heading">
+				      		<h4>Examen "<?php echo $noombre_examen['nombre']; ?>"</h4>
+				      	</div>
+				      	<div class="panel-body">
+						<a name="demo"></a>
+							<h2></h2>
+							<p>Basic Demo Example.</p>
+						<div id="rootwizard">
+										<div class="navbar">
+										  <div class="navbar-inner">
+										    <div class="container">
+																<ul>
+																
+																 <?php for ($i=1; $i < $cant_preg + 1; $i++) { 
+																 	#lista de preguntas
+																 	echo "<li><a href='#tab".$i."' data-toggle='tab'>".$i."</a></li>"; 
+																 } ?>
+																</ul>
+										 	</div>
+										  </div>
+										</div>
+										<div id="bar" class="progress active">
+										  			<div class="progress-bar progress-bar-info"></div> <!-- REVISAR ESTO!!! -->
+										</div>
 
-					    </div>  <!--class="tab-pane"-->
-					   
-			<?php	
-			      } //Cierra Primer WHILE
-		    ?>
-			
-			
-		
-				
-				<ul class="pager wizard">
-				<hr>
-					<li class="previous first" style="display:none;"><a href="javascript:;">First</a></li>
-					<li class="previous"><a href="javascript:;">Previous</a></li>
-					<li class="next last" style="display:none;"><a href="javascript:;">Last</a></li>
-				  	<li class="next"><a href="javascript:;">Next</a></li> <!--Botones-->
-				</ul>
-				</div>
-			 </div> <!--class="tab-content"-->
-	</div> <!--id="rootwizard"-->
-</div> <!--class="span11"-->
+										<div class="container">
+										<div class="tab-content">
+										
+											<?php while ($preg = traer_registro($preguntas)) { 
+
+												$cant++;
+											?>	
+											
+										    <div class="tab-pane" id="tab<?php echo $preg['id']; ?>">
+										    	<form id="preg"  method="POST">         <!--prueba_exam.php-->
+													
+															<!-- Pregunta -->
+															<div class="col-md-3 bg-success "> 
+																<h4>Pregunta Nº <?php echo $preg['id']; ?></h4>
+																<p>Sin responder aún</p>
+																<p>Puntaje <?php echo $preg['valor'];?></p>
+																<p>Porcentaje error <?php echo $preg['porcentaje_error'];?>%</p>
+															</div>
+															<!-- Respuestas  de Preguntas  -->
+															<div class="col-md-offset-1 col-md-7 bg-info">
+															<div class="form-group">	
+															<div class="col-md-12"><u><p><?php echo $preg['enunciado'];?></p></u></div>
+																<?php $id=0;
+																$idpregunta = $preg['id'];
+																$respuestas = consulta("SELECT * FROM respuesta WHERE pregunta_id = $idpregunta");
+																while ($resp = traer_registro($respuestas)){
+																		$afirmacion = $resp['descripcion'];
+																		?>
+																<label class="col-md-offset-1 col-md-8 control-label"><?php echo $afirmacion;?></label>
+															    <div class="col-md-3">
+															    <label class="radio-inline"><input type="radio" name="<?php echo $resp['id'];?>" value="1">V</label>
+															    <label class="radio-inline"><input type="radio" name="<?php echo $resp['id'];?>" value="0">F</label>
+															    </div>
+															
+																<?php } //Segundo WHILE ?>
+															</div> <!-- form-group -->
+															</div> <!-- bg-info -->	
+															     
+															    <button type="submit" id="coso" class="btn btn-success btn-lg center-block"  >Verificar ?</button>
+									        									
+															</form>	
+
+											</div>  <!--class="tab-pane"-->
+														   
+												<?php	
+												      } //Cierra Primer WHILE
+											    ?>
+												
+												
+											
+													
+													<ul class="pager wizard">
+													<hr>
+														<li class="previous first" style="display:none;"><a href="javascript:;">First</a></li>
+														<li class="previous"><a href="javascript:;">Previous</a></li>
+														<li class="next last" style="display:none;"><a href="javascript:;">Last</a></li>
+													  	<li class="next"><a href="javascript:;">Next</a></li> <!--Botones-->
+													</ul>
+											
+										</div> <!--class="tab-content"-->
+										</div><!--class="container"-->
+						</div> <!--id="rootwizard"-->
+						</div><!--class="panel-body"-->
+			</div><!--class="panel panel-info"-->
+</div><!--class="container"-->
 
 
 
