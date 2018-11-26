@@ -1,0 +1,8 @@
+c:\users\us3r\documents\visual studio 2013\Projects\Viajes\Viajes\bin\Debug\Viajes.dll
+c:\users\us3r\documents\visual studio 2013\Projects\Viajes\Viajes\bin\Debug\Viajes.pdb
+c:\users\us3r\documents\visual studio 2013\Projects\Viajes\Viajes\bin\Debug\Viajes.xml
+c:\users\us3r\documents\visual studio 2013\Projects\Viajes\Viajes\obj\Debug\Viajes.Resources.resources
+c:\users\us3r\documents\visual studio 2013\Projects\Viajes\Viajes\obj\Debug\Viajes.vbproj.GenerateResource.Cache
+c:\users\us3r\documents\visual studio 2013\Projects\Viajes\Viajes\obj\Debug\Viajes.dll
+c:\users\us3r\documents\visual studio 2013\Projects\Viajes\Viajes\obj\Debug\Viajes.xml
+c:\users\us3r\documents\visual studio 2013\Projects\Viajes\Viajes\obj\Debug\Viajes.pdb

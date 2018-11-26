@@ -1,0 +1,13 @@
+c:\Users\US3R\documents\visual studio 2013\Projects\Viajes\ViajesTest\bin\Debug\ViajesTest.exe.config
+c:\Users\US3R\documents\visual studio 2013\Projects\Viajes\ViajesTest\bin\Debug\ViajesTest.exe
+c:\Users\US3R\documents\visual studio 2013\Projects\Viajes\ViajesTest\bin\Debug\ViajesTest.pdb
+c:\Users\US3R\documents\visual studio 2013\Projects\Viajes\ViajesTest\bin\Debug\ViajesTest.xml
+c:\Users\US3R\documents\visual studio 2013\Projects\Viajes\ViajesTest\bin\Debug\Viajes.dll
+c:\Users\US3R\documents\visual studio 2013\Projects\Viajes\ViajesTest\bin\Debug\Viajes.pdb
+c:\Users\US3R\documents\visual studio 2013\Projects\Viajes\ViajesTest\bin\Debug\Viajes.xml
+c:\Users\US3R\documents\visual studio 2013\Projects\Viajes\ViajesTest\obj\Debug\ViajesTest.vbprojResolveAssemblyReference.cache
+c:\Users\US3R\documents\visual studio 2013\Projects\Viajes\ViajesTest\obj\Debug\ViajesTest.Resources.resources
+c:\Users\US3R\documents\visual studio 2013\Projects\Viajes\ViajesTest\obj\Debug\ViajesTest.vbproj.GenerateResource.Cache
+c:\Users\US3R\documents\visual studio 2013\Projects\Viajes\ViajesTest\obj\Debug\ViajesTest.exe
+c:\Users\US3R\documents\visual studio 2013\Projects\Viajes\ViajesTest\obj\Debug\ViajesTest.xml
+c:\Users\US3R\documents\visual studio 2013\Projects\Viajes\ViajesTest\obj\Debug\ViajesTest.pdb
