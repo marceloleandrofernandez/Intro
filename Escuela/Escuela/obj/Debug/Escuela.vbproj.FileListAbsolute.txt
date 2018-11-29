@@ -1,0 +1,8 @@
+c:\users\us3r\documents\visual studio 2013\Projects\Escuela\Escuela\bin\Debug\Escuela.dll
+c:\users\us3r\documents\visual studio 2013\Projects\Escuela\Escuela\bin\Debug\Escuela.pdb
+c:\users\us3r\documents\visual studio 2013\Projects\Escuela\Escuela\bin\Debug\Escuela.xml
+c:\users\us3r\documents\visual studio 2013\Projects\Escuela\Escuela\obj\Debug\Escuela.Resources.resources
+c:\users\us3r\documents\visual studio 2013\Projects\Escuela\Escuela\obj\Debug\Escuela.vbproj.GenerateResource.Cache
+c:\users\us3r\documents\visual studio 2013\Projects\Escuela\Escuela\obj\Debug\Escuela.dll
+c:\users\us3r\documents\visual studio 2013\Projects\Escuela\Escuela\obj\Debug\Escuela.xml
+c:\users\us3r\documents\visual studio 2013\Projects\Escuela\Escuela\obj\Debug\Escuela.pdb

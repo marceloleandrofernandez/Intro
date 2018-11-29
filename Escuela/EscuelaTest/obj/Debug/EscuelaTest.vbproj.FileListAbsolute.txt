@@ -1,0 +1,12 @@
+c:\Users\US3R\documents\visual studio 2013\Projects\Escuela\EscuelaTest\bin\Debug\EscuelaTest.pdb
+c:\Users\US3R\documents\visual studio 2013\Projects\Escuela\EscuelaTest\bin\Debug\EscuelaTest.xml
+c:\Users\US3R\documents\visual studio 2013\Projects\Escuela\EscuelaTest\bin\Debug\Escuela.dll
+c:\Users\US3R\documents\visual studio 2013\Projects\Escuela\EscuelaTest\bin\Debug\Escuela.pdb
+c:\Users\US3R\documents\visual studio 2013\Projects\Escuela\EscuelaTest\bin\Debug\Escuela.xml
+c:\Users\US3R\documents\visual studio 2013\Projects\Escuela\EscuelaTest\obj\Debug\EscuelaTest.vbprojResolveAssemblyReference.cache
+c:\Users\US3R\documents\visual studio 2013\Projects\Escuela\EscuelaTest\obj\Debug\EscuelaTest.Resources.resources
+c:\Users\US3R\documents\visual studio 2013\Projects\Escuela\EscuelaTest\obj\Debug\EscuelaTest.vbproj.GenerateResource.Cache
+c:\Users\US3R\documents\visual studio 2013\Projects\Escuela\EscuelaTest\obj\Debug\EscuelaTest.xml
+c:\Users\US3R\documents\visual studio 2013\Projects\Escuela\EscuelaTest\obj\Debug\EscuelaTest.pdb
+c:\Users\US3R\documents\visual studio 2013\Projects\Escuela\EscuelaTest\bin\Debug\EscuelaTest.exe
+c:\Users\US3R\documents\visual studio 2013\Projects\Escuela\EscuelaTest\obj\Debug\EscuelaTest.exe
